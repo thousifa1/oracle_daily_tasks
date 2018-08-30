@@ -30,4 +30,4 @@ do
 done
 
 rm -r ${zip_file_list}
-chmod +R 777 * 
+chmod -R 777 * 
