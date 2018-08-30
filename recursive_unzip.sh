@@ -29,5 +29,5 @@ do
 	do_get_zip_file_count
 done
 
-rm -r zip_file_list
+rm -r ${zip_file_list}
 chmod +R 777 * 
