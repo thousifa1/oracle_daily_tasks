@@ -17,5 +17,5 @@ OUTPUT_FILE=output_file.txt
 while read line
 do
 	plb_file_name=${line}.plb
-	find . -iname ${plb_file_name}  -print | tr "\134" "\057" | awk -F'/' '{print NF " @" $0}' | sort -n | awk '{print "prompt " $2 "\n" $2}' > ${OUTPUT_FILE}
+	find . -iname ${plb_file_name}  -print | tr "\134" "\057" | awk -F'/' '{print NF " @" $0}' | sort -n | awk '{print "prompt " $2 "\n" $2}' >> ${OUTPUT_FILE}
 done < ${INPUT_FILE}
