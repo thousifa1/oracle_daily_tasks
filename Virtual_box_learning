@@ -1,0 +1,9 @@
+To find the ip address of an virtual box without logging in --i.e which is started in headlezss node
+
+===== go to the Path of the Virtual box
+
+.\VBoxManage.exe guestproperty get "<VM NAME>"  "/VirtualBox/GuestInfo/Net/0/V4/IP"
+
+For Ex: 
+.\VBoxManage.exe guestproperty get "Oracle DB Developer VM"  "/VirtualBox/GuestInfo/Net/0/V4/IP"
+
